@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: duedate_dev
+  username: hecbuma
+  password: hecbuma
+
+test:
+  adapter: postgresql
+  database: duedate_test
+  username: hecbuma
+  password: hecbuma
+
+production:
+  adapter: postgresql
+  database: duedate_prod
+  username: hecbuma
+  password: hecbuma
