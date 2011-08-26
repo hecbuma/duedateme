@@ -3,16 +3,16 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0.rc6'
 gem 'omnisocial', :git => 'git://github.com/excid3/omnisocial.git'
 gem 'haml-rails'
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+gem 'compass', :git => "https://github.com/chriseppstein/compass.git", :branch => "rails31"
+gem 'ruby-debug19'
 gem 'pg'
-
+gem 'mongoid'
+gem 'bson_ext'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails', "  ~> 3.1.0.rc"
+  gem 'sass-rails', "  ~> 3.1.0.rc6"
   gem 'coffee-rails', "~> 3.1.0.rc"
   gem 'uglifier'
 end
