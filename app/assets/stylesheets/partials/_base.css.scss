@@ -1,0 +1,26 @@
+// Compass Imports
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+@import "blueprint";
+
+$background-color: #562155;
+$background-color-darker: #4C1D4C;
+
+html {
+  height: 100%
+}
+body {
+  //font-family: 'Numans', sans-serif;
+  //font-family: 'Short Stack', cursive;
+  //font-family: 'Comfortaa', cursive;
+  //font-family: 'Marvel', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
+  height: 100%;
+  
+  @include linear-gradient(#D4C9D4,#ffffff);
+  overflow-x: hidden;
+}
+a {
+  outline:none;
+}

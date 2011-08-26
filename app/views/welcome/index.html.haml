@@ -1,2 +1,75 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.haml
+:javascript
+  $(document).ready(function(){
+    $(window)._scrollable();
+    var window_height = $(window).height();
+    var window_width = $(window).width();
+    $('section').css('width',window_width);
+    $('section').css('height',window_height);
+    $('body').css('width',window_width*4);
+    $('body').css('height',window_height);
+    
+    $('.home').bind('click', function() {
+      
+      $.scrollTo({ top:0, left:0}, 2000, {onAfter:function(){}});
+      $('nav ul li a').removeClass('selected');
+      $('.home').addClass('selected');
+    });
+    
+    $('.what_is').bind('click', function() {
+      
+      $.scrollTo({ top:0, left:window_width}, 2000, {onAfter:function(){}});
+      $('nav ul li a').removeClass('selected');
+      $('.what_is').addClass('selected');
+    });
+    
+    $('.what_else').bind('click', function() {
+      
+      $.scrollTo({ top:0, left:window_width*2}, 2000, {onAfter:function(){}});
+      $('nav ul li a').removeClass('selected');
+      $('.what_else').addClass('selected');
+    });
+   
+    $('.registry').bind('click', function() {
+      
+      $.scrollTo({ top:0, left:window_width*3}, 2000, {onAfter:function(){}});
+      $('nav ul li a').removeClass('selected');
+      $('.registry').addClass('selected');
+    });
+  });
+
+%h1 Due Date
+.cross-ribon
+  &nbsp;
+%section#home
+  .center-box
+    %h2 Introducing
+    %p cool services  
+%section#what_is
+  .center-box
+    %h2 Whats is due date?
+    %p
+      how many time tell to your friends or whatever when is your's due date. Well due date will help.. its a simple service
+      to share your due date with everyone
+%section#what_else
+  .center-box
+    %h2 What else can do with due date?
+    %p
+      you have the option to share with in all your favs social networks..
+    %p And also you can add your babys registry link and ask for name suggestions
+%section#registry
+  .center-box
+    %h2 Registry
+    %p
+      Easy, just log in with one of your accounts
+    = link_to image_tag('twt.png'), '/auth/twitter'
+    = link_to image_tag('fb.png'), '/auth/facebook'
+%nav
+  %ul
+    %li 
+      %a.home.selected{:href => '#home'} Start
+    %li 
+      %a.what_is{:href => '#whats_is'} What is due date?
+    %li 
+      %a.what_else{:href => '#what_else'} What else can I do with due date?
+    %li 
+      %a.registry{:href => '#registry'} Registry

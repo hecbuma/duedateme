@@ -1,0 +1,17 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ 
+*/
+@import url(http://fonts.googleapis.com/css?family=Numans);
+@import url(http://fonts.googleapis.com/css?family=Short+Stack);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Marvel:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+@import url(http://fonts.googleapis.com/css?family=Snippet);
+@import 'partials/*';
+@import "*";
+
+

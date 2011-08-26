@@ -1,0 +1,76 @@
+div {
+  
+}
+nav {
+  position:fixed;
+  top:80%;
+  left:31%;
+  ul li {
+    display:inline-block;
+    margin-left: 14px;
+    a {
+      text-decoration:none;
+      color: #72577C;
+    }
+    a.selected {
+      @include border-radius(20px);
+      @include box-shadow(rgba(0, 0, 0, 0.4) 0 0 2px);
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+      @include linear-gradient(color-stops(#C5F7F0, #94B9B4), center top);
+      padding: 9px;
+    }
+  }
+}
+section {
+  float:left;
+}
+section#registry {
+  a {
+    display:inline-block;
+    margin-left: 31px;
+    margin-top: 25px;
+    img {
+      display:inline-block;
+      width: 113px;
+    }
+  }
+  
+}
+h1 {
+  font-family: 'Snippet', sans-serif;
+  position:fixed;
+  font-size:5em;
+  left:37%;
+  color: #D6CCD6;
+  text-shadow:  0 0 rgba(0, 0, 0, 0.5), 0 -1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.5), -1px -2px rgba(0, 0, 0, 0.3);
+}
+h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: right;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  margin-bottom:5px;
+}
+.cross-ribon {
+  @include linear-gradient(color-stops(#8E8CA3, #72577C), center top);
+  @include box-shadow(rgba(0, 0, 0, 0.4) 0 0 21px);
+  height: 100px;
+  margin-top: 15%;
+  position: fixed;
+  width: 100%;
+}
+.center-box {
+  @include border-radius(20px);
+  @include box-shadow(rgba(0, 0, 0, 0.4) 0 0 2px);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+  @include linear-gradient(color-stops(#C5F7F0, #94B9B4), center top);
+  display: block;
+  height: 230px;
+  margin: 0 auto;
+  padding: 12px;
+  position: relative;
+  top: 24%;
+  width: 333px;
+  z-index: 11;
+}
