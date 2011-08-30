@@ -1,7 +1,7 @@
 Omnisocial.setup do |config|
 
   # ==> Twitter
-   config.twitter 'ThX3FrCTfxP5KmnSad4I0g', 'z3HB2CzHZk6ydR85UFgu8UmtmWS0ZqKRwLPAdcNg'
+   config.twitter 'ThX3FrCTfxP5KmnSad4I0g', 'z3HB2CzHZk6ydR85UFgu8UmtmWS0ZqKRwLPAdcNg', :redirect_uri => "/profiles"
 
   # ==> Facebook
    config.facebook '118777854809616', '4185e3f37fe9c374eade8106dbcef16d', :scope => 'publish_stream'

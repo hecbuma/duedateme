@@ -1,0 +1,35 @@
+:javascript
+  $(document).ready(function(){
+    $('.profile-options').draggable({handle:'a.drag'});
+    $('.profile-options').tabs();
+  });
+.profile-options
+  .header-opts
+    %ul.menu
+      %li
+        %a{:href => '#settings'} Settings
+      %li
+        %a{:href => '#backgrounds'} Backgrounds
+      %li
+        %a{:href => '#colors'} Colors
+      %li
+        %a{:href => '#fonts'} Fonts
+      %li
+        %a{:href => '#sharing'} Sharing
+    .controls
+      %a.close{:href => '#'} close
+      %a.drag{:href => '#'} drag
+  .body-options.clear
+    #settings
+      %h3.red You must choise you username name before continue
+      .options-content
+        
+    #backgrounds
+      %h3 backgrounds
+    #colors
+      #h3 colors
+    #fonts
+      #h3 fonts
+    #sharing
+      #h3 Sharing
+      

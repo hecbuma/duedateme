@@ -1,0 +1,49 @@
+.profile-options{
+  width:400px;
+  min-height:350px;
+  position:relative;
+  left:0;
+  rigth:0;
+  top:20%;
+  margin:0 auto;
+  @include border-radius(5px);
+  @include box-shadow(rgba(0, 0, 0, 0.7) 0 0 7px);
+  @include linear-gradient(color-stops(#97ADB3, #A9C2C9), center top);
+  padding:10px;
+  
+  
+  .header-opts {
+
+  }
+  .menu {
+    
+    display:inline-block;
+    li{ 
+    display:inline-block;
+    a {color:white;}
+    }
+  }
+  .controls {
+    float:right;
+    display:inline-block;
+    a {
+      text-indent:-9999px;
+      display:inline-block;
+      height:25px;
+      width:25px;
+    }
+    .close {background:url('/assets/close.png');}
+
+    .drag {background:url('/assets/drag.png');}
+  }
+
+.body-options {
+  
+  .options-content {
+    @include border-radius(5px);
+    background: lightgray;
+    min-height: 316px;
+  }
+}
+
+}
